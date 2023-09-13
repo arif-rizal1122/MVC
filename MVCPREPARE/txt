@@ -1,0 +1,41 @@
+
+
+
+what's that MVC ?
+
+####***definisi***###
+
+"POLA ARSITECTUR PADA PERANCANGAN PERANGKAT LUNAK BERORIENTASI OBJECT"
+
+###***Goals***###
+
+"Memisahkan Antara Tampilan Data Dan Proses"
+
+MVC?
+
+Model = Data
+1. representasi pengetahuan
+2. mengelola Data
+3. logika bisnis
+
+View = Tampilan
+1. Output apa yg akan dilihat oleh user 
+2. representasi visual dari Model
+3. Lapisan Presentasi
+
+Controller = Proses 
+1. perantara antara model dan view 
+2. menangani pemrosesan pada aplikasi
+3. menangani aksi dari user
+
+WHY MVC ?
+
+1. Organisasi Dan Structur Code
+2. pemisahan logic/proses dan Tampilan
+3. perawatan Code
+4. implementasi Konsep OOP yg sudah dipelajari
+5. Digunakan oleh banyak Web Application Framework
+
+
+***MVC PREPARE***
+

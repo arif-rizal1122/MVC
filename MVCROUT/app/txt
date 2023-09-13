@@ -1,0 +1,6 @@
+
+***  ***
+
+# kalo ada user membuka folde App dan folder didalamnya, selama di folder didalamya tidakada file index.php maka block hak akses.........
+
+Options -Indexes

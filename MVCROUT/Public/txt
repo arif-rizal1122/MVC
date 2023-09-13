@@ -1,0 +1,23 @@
+
+***   ***
+# Options -Multiviews ini digunkan untuk menghindari ambigu/kesalahan pada kita memanggil file didalam public itu sendiri
+
+Options -Multiviews
+
+
+# RewriteEngine ini artinya untuk memanggil ulang 
+#ini prosses rewrite nya
+
+RewriteEngine 
+#Penulissan ulang condisi(!-d = folder)
+RewriteCond %{REQUEST_FILENAME} !-d
+#Penulissan ulang condisi(!-f = file)
+RewriteCond %{REQUEST_FILENAME} !-f
+#ini untuk menghindari jika ada nama folder / file yg sama dengan nama controller dan method kita nanti nya
+
+RewriteRule ^(.*)$ index.php?url=$1 [L]
+#ini aturan untuk menulis ulang url nya
+# ^ ini untuk membaca apapun yg ditulis pada url yg dimulai dari awal disini mulai kita menulis folder public setelah kita menulis folder public slash langsung diambil string nya
+# (.*) artinya ambil karakter satu persatu apapun karakter kecuali enter
+# apapun yg ditulis pada akhirnya akan disimpan di $1
+# [L] ini artinya kalau ada rule yg terpenuhi maka jangan jalankan rule lainya setelah rule ini...............
