@@ -16,7 +16,8 @@ class App {
             $url = rtrim( $_GET['url'], '/');
             /* dibawah ini cara membersihkan url dari karacter yg ngaco/aneh (karackter khusus) */ 
             $url = filter_var($url, FILTER_SANITIZE_URL);
-            /* memecah url berdasarkan tanda slash mengunakan explode */
+            /* memecah url berdasarkan tanda slash mengunakan explode dan mengubahnya menjadi array */
+         
             $url = explode('/', $url);
             // kembalikan nilai yg diolah
             return $url;
