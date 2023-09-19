@@ -1,5 +1,7 @@
 <?php 
 
+
+// ini dipakai untuk get[url]
 class App {
     public function __construct(){
         // $url ini adl $url yg di parsing
@@ -8,7 +10,10 @@ class App {
         // echo $url;
 
     }
+
+
     // prettier url {mempercantik url nya}
+
     public function parseURL(){
         // jika ada $url yg dikirim maka ambil datanya
         if(isset($_GET['url'])){

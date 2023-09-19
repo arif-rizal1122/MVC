@@ -39,3 +39,35 @@ WHY MVC ?
 
 ***MVC PREPARE***
 
+**Main Folders**
+- app
+- public
+
+**__public__**
+  
+  main folder public adalah  folder yg bisa diakses oleh users
+   - js
+   - css
+   - img 
+     - .htaccess
+     - index.php
+
+**__app__**
+
+main folder app ini akan menyimpan file maupun folder utama pada mvc kita :
+
+   - core = inti dari mvc yg dimana kita nanti mengelola routing
+
+   - controllers = ini dimana semua controller akan masuk di controller ini seperti 
+     > Home.php
+     > About.php
+
+   - views = yg mana menampilkan antar muka yg disajikan oleh controllers nya   
+     - folder home
+       ini menampilkan semua tampilan dari hasilcontrollers/Home.php
+
+     -  folder about
+        ini menampilkan semua tampilan dari hasilcontrollers/About.php
+
+
+

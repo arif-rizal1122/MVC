@@ -8,7 +8,7 @@ class App {
 
     public function __construct(){
         $url = $this->parseURL();
-        print_r($url);exit;
+    
         /*## ALL ABOUT CONTROLLER ##*/ 
 
         // ada gak file yg namanya Home.php di folder controllers
