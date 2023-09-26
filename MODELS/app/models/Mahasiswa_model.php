@@ -23,15 +23,17 @@ class Mahasiswa_model {
     //     ]
     // ];
     private $dbh; // database handler
-    private $stmt; //
+    private $stmt; // $stmt buat menyimpan query
     
 
     public function __construct(){
-        // data source name
+        // data source name = identitas dari server kita
         $dsn = 'mysql:host=localhost;dbname=phpmvc';
         
         try {
             $this->dbh = new PDO($dsn, 'root', '');
+            // ketika error tangkap mengunakan PDOexeption 
+            // masukan ke vsariabel $e
         } catch(PDOException $e) {
             die($e->getMessage());
         }
